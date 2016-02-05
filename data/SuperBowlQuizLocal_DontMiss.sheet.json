@@ -2,26 +2,26 @@
   {
     "link": "http://projects.sfchronicle.com/2016/superbowl-quiz/",
     "img": "./assets/superbowlquiz1.jpeg",
-    "type": "Super Bowl quiz",
+    "type": "The quiz",
     "description": "How is your general Super Bowl knowledge?",
     "undefined": " "
   },
   {
     "link": "http://www.sfchronicle.com/49ers/article/Bay-Area-awarded-Super-Bowl-L-4535464.php?t=906241b4285c56181f&cmpid=twitter-premium",
     "img": "./assets/dontmiss2.JPG",
-    "type": "Story",
-    "description": "Original 2013 article on Super Bowl 50 awarded to Levi's Stadium"
+    "type": "The beginning",
+    "description": "When Super Bowl 50 was awarded to Levi's Stadium"
   },
   {
     "link": "http://www.sfchronicle.com/49ers/article/Young-Plunkett-launch-long-countdown-to-Super-6494214.php?t=a09e140ea75c56181f&cmpid=twitter-premium",
     "img": "./assets/dontmiss3.JPG",
-    "type": "Story",
-    "description": "Steve Young, Jim Plunkett kick off festivities in September"
+    "type": "The hoopla",
+    "description": "Steve Young and Jim Plunkett's Super Bowl kickoff"
   },
   {
     "link": " http://www.sfchronicle.com/sports/ostler/article/Old-QB-against-new-as-Manning-will-face-Newton-in-6781467.php?t=bb482b64b85c56181f&cmpid=twitter-premium",
     "img": "./assets/dontmiss4.JPG",
-    "type": "Column",
-    "description": "Scott Ostler on the Super Bowl 50 marquee quarterback matchup"
+    "type": "The game",
+    "description": "Scott Ostler on the Manning vs. Newton"
   }
 ]
