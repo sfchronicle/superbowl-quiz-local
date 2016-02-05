@@ -78,6 +78,7 @@ $(".quiz-container").on("click", ".submit", function() {
   answerData.summary = q.summary;
   answerData.storyurl = q.storyurl;
   answerData.caption = q.caption;
+  track("interactive", "superbowl-quiz-local", (correct ? "correct-" : "wrong-") + id);
 
   console.log(answerData);
   $(".question-box").html(ich.resultTemplate(answerData));
@@ -108,6 +109,7 @@ var calculateResult = function() {
     }
 
     result.total = total;
+    track("interactive", "superbowl-quiz", "total-" + score);
     result.rows = rows;
     console.log(result);
 
