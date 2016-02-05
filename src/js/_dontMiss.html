@@ -1,0 +1,18 @@
+
+<div class="dont-miss">
+  <% json.SuperBowlQuizLocal_DontMiss.forEach(function(story) { %>
+
+    <div class="story">
+      <div class="padded">
+        <a href="<%= story.link %>" target="_blank">
+          <img src="<%= story.img %>"></img>
+        </a>
+          <div class="small"><%= story.type %></div>
+        <a href="<%= story.link %>" target="_blank">
+          <div><%= story.description %></div>
+        </a>
+      </div>
+    </div>
+  <% }) %>
+
+</div>

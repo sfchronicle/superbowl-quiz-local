@@ -1,0 +1,31 @@
+
+<div class="inner-box">
+
+  <div class="img-class final">
+    {{#storyurl}}<a href="{{storyurl}}" target="_blank"><img src="{{image}}"></a>{{/storyurl}}
+    {{^storyurl}}<img src="{{image}}">{{/storyurl}}
+    <div class="caption">{{caption}}</div>
+  </div>
+
+
+  <div class="inner">
+
+    <div class="highlight">
+      <span class="highlight correct">{{#hooray}}<i class="fa fa-thumbs-up"></i> Right!{{/hooray}}</span>
+      <span class="highlight wrong">{{^hooray}}<i class="fa fa-thumbs-down"></i> Wrong.{{/hooray}}</span>
+    </div>
+
+    <div class="answer-info">
+      <div class="ans"></div>
+      {{summary}}
+      {{#storyurl}}<p>
+        <a href="{{storyurl}}" target="_blank">
+          See related story <i class="fa fa-long-arrow-right"></i>
+        </a>
+      {{/storyurl}}
+    </div>
+    <button class="next active">Next question <i class="fa fa-arrow-right"></i></button>
+
+  <div>
+
+</div>

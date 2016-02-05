@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Super Bowl Local Quiz | SF Chronicle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <%= t.include("partials/_head.html") %>
+    <%= t.include("partials/_analytics_hearst.html") %>
+  </head>
+  <body>
+
+    <nav class="top-bar">
+      <a class="logo" href="http://www.sfchronicle.com">
+        <img src="./assets/sf_logo_black.png">
+      </a>
+    </nav>
+
+    <header>
+      <div class="banner">
+        <img src="./assets/superbowlquiz2.jpg"></img>
+      </div>
+      <a class="share-button"></a>
+    </header>
+
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header"></div>
+        <div class="quiz-box">
+          <div class="question-box"></div>
+        </div>
+      <div class="quiz-footer"></div>
+    </div>
+
+    <div class="credits">
+      Quiz by <span class="credit-name">Vic Tafur and Mike Massa</span> &bull; Illustrations by <span class="credit-name">Danielle Mollette-Parks</span> &bull; Web development by <span class="credit-name">Emma O'Neill</span> &bull; Images from <span class="credit-name">Getty Images and the Associated Press</span>
+    </div>
+
+    <div class="thin-div">
+      <div class="center">Don't Miss</div>
+    </div>
+
+    <%= t.include("js/_dontMiss.html") %>
+
+    <footer>
+      <a class="logo" href="http://www.sfchronicle.com">
+        <img src="./assets/sf_logo_white.png">
+      </a>
+    </footer>
+
+    <script>
+      <%
+        var quizData = {};
+        var rows = [];
+        json.SuperBowlQuizLocal_Questions.forEach(function(q) {
+          quizData[q.id] = {
+            "question": q.question,
+            "finalImage": q.image,
+            "summary": q.summary,
+            "storyurl": q.storyurl,
+            "caption": q.caption
+          };
+          rows.push({
+            "summary": q.summary,
+            "storyurl": q.storyurl
+          });
+        });
+
+        json.SuperBowlQuizLocal_Answers.forEach(function(a) {
+          var id = a.id;
+          if (!quizData[id].answers) { quizData[id].answers = [] }
+          var answer = {
+            answer: a.answer,
+            correct: a.correct,
+          };
+          quizData[id].answers.push(answer);
+        });
+      %>
+      var quizData = <%= JSON.stringify(quizData) %>
+      var rows = <%= JSON.stringify(rows) %>
+      var resultsData = <%= JSON.stringify(json.SuperBowlQuizLocal_Results) %>
+
+    </script>
+
+    <script src="app.js"></script>
+
+    <%= t.include("partials/_foot.html") %>
+    <%= t.include("partials/_workHere.html") %>
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Expert",
+    "min": 13,
+    "max": 15,
+    "description": "A true Bay Area sports Hall of Famer",
+    "result-img": "./assets/quizlocal_results_expert.JPG",
+    "caption": "Michael Jackson: King of Pop. You: King of Pop Quizzes. George Rose / Getty Images"
+  },
+  {
+    "title": "Knowledgeable",
+    "min": 10,
+    "max": 12,
+    "description": "Must belong to either the 49er Faithful or Raider Nation",
+    "result-img": "./assets/quizlocal_results_knowledgable.JPG",
+    "caption": "So close to making it to the promised land. Al Bello / Getty Images"
+  },
+  {
+    "title": "Average",
+    "min": 7,
+    "max": 9,
+    "description": "Better than being below average\n",
+    "result-img": "./assets/quizlocal_results_average.JPG",
+    "caption": "Performance worthy of mild applause. Smiley N. Pool / Houston Chronicle"
+  },
+  {
+    "title": "Meh",
+    "min": 4,
+    "max": 6,
+    "description": "Your focus is probably on spring training this time of year",
+    "result-img": "./assets/quizlocal_results_meh.JPG",
+    "caption": "Not everyone can shine all the time, right Colin Kaepernick? Carlos Avila Gonzalez / The Chronicle"
+  },
+  {
+    "title": "Failure",
+    "min": 0,
+    "max": 3,
+    "description": "You obviously read the pink section more than the green section",
+    "result-img": "./assets/quizlocal_results_failure.JPG",
+    "caption": "Use the next 12 months to study your Super Bowl history.  Kevin C. Cox/Getty Images"
+  }
+]

@@ -1,0 +1,27 @@
+<!-- Begin Hearst analytics -->
+<script type="text/javascript">
+    var omni_channelPath = "News :: Special Projects";
+    var omni_title = "Super Bowl Local Quiz";
+    var omni_className = "channel";
+    var omni_publicationDate = "2015-12-08 00:01:00";
+    var omni_authorName = "By Vic Tafur and Mike Massa and Emma O'Neill";
+    var omni_authorTitle = "San Francisco Chronicle staff";
+</script>
+<!-- Hearst analytics: Ensighten -->
+<script type="text/javascript">
+  (function(e) {
+    var t = '//nexus.ensighten.com/hearst/news/Bootstrap.js';
+    if (e.cookie.indexOf("nsghtn") > -1) {
+      if(e.cookie.indexOf("nsghtn=test-dev") > -1) {
+      console.log("Ensighten :: Test-Dev"); t = "//nexus-test.ensighten.com/hearst/news-dev/Bootstrap.js";
+      } else if(e.cookie.indexOf("nsghtn=test") > -1) {
+      console.log("Ensighten :: Test"); t = "//nexus-test.ensighten.com/hearst/news/Bootstrap.js";
+      } else if(e.cookie.indexOf("nsghtn=dev") > -1) {
+      console.log("Ensighten :: Dev"); t = "//nexus.ensighten.com/hearst/news-dev/Bootstrap.js";
+      }
+    }
+    e.write("<scr"+"ipt src='"+e.location.protocol+t+"'></scr"+"ipt>");
+  })(document);
+</script>
+<!-- End Hearst analytics: Ensighten -->
+<!-- End Hearst analytics -->

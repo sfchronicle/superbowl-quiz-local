@@ -1,0 +1,26 @@
+<div class="inner">
+
+  <div class="inner-box">
+
+    <div class="inner-text">
+
+      <div class="index"></div>
+      {{question}}
+
+      <div class="option-box">
+        {{#answers}}
+          <div class="option">
+            <input type="radio" value="{{correct}}" name="answer" id="{{answer}}">
+            <label for="{{answer}}">{{answer}}</label>
+          </div>
+        {{/answers}}
+      </div>
+
+      <div class="button-box">
+        <button class="submit" disabled><i class="padded fa fa-check"></i>Submit</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
